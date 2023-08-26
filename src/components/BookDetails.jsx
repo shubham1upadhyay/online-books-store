@@ -6,8 +6,6 @@ const BookDetails = ({ bookInfo, setBookList, selectedBook, showInfo }) => {
 
   const [results, setResults] = useState([]);
 
-
-
   useEffect(() => {
     if (bookInfo.length <= 0) {
       getBooksData('harry potter');
