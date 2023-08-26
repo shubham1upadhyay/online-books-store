@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --light-grey: #808080;
+  --userAccount-color: #c3bebe;
+  --icon-color: #e7e2e2;
+  --white: #ffffff;
+  --desc-color: #d2d2d2;
+  --header-bg-color: #292828;
+  --search-bg-color: #373737;
+  --main-bg-color: #242121;
+}
+.container {
+  background-color: var(--main-bg-color);
+  min-height: 100vh;
+  color: var(--white);
+}
+header {
+  background-color: var(--header-bg-color);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding:.8rem;
+  align-items: center;
+  /* height: 15vh; */
+  position: fixed;
+  top: 0;
+  z-index: 200;
+  width: 100%;
+}
+.logo-section {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  padding: 0 0.8rem;
+}
+
+.logo-image img {
+  width: 3rem;
+  margin-right: 10px;
+}
+.logo-section .logo-name {
+  width: 6rem;
+  /* height: 20px; */
+}
+.logo-name img {
+  width: 100%;
+  height: 100%;
+}
+.search-section {
+  display: flex;
+  width: 60%;
+}
+.search-section .input-section {
+  display: flex;
+  width: 50rem;
+  padding: .2rem;
+  justify-content: space-between;
+  border: 1px solid var(--light-grey);
+}
+.input-section input:focus {
+  outline: none;
+}
+::placeholder {
+  font-size: 13px;
+}
+.input-section .search-image {
+  width: 6%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-image img {
+  /* width: 90%;
+  height: 90%; */
+}
+.input-section input {
+  width: 93%;
+  background: none;
+  color: white;
+  border: none;
+}
+.search-btn {
+  width: 88px;
+  margin-inline: 5px;
+  cursor: pointer;
+}
+
+.icons-section {
+  
+  display: flex;
+  align-items: center;
+  width: 20%;
+  padding: 0 2rem;
+}
+.icons-section > div {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+.icons-section > div:not(:last-child) {
+  margin-inline: 4px;
+}
+.icons-section > div:last-child {
+  margin-left: 6px;
+}
+.icons-section > div > img {
+  /* width: 100%;
+  height: 100%; */
+  width: 2rem;
+}
+
+main {
+  min-height: calc(100vh - 15vh);
+  position: relative;
+  top: 15vh;
+  background-color: var(--main-bg-color);
+}
+
+/* for books container */
+.books-container {
+  display: flex;
+  /* flex-wrap: wrap; */
+  padding: 2rem 1rem;
+  gap: 10px;
+}
+.books {
+  /* border: 1px solid white; */
+  width: 33%;
+  display: flex;
+  align-items: center;
+  height: fit-content;
+}
+.book-image {
+  width: 180.89px;
+  height: 200.22px;
+  transform: rotate(-5deg);
+  border-right: 13px solid white;
+  z-index: 110;
+}
+.book-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.book-desc {
+  position: relative;
+  width: 256px;
+  left: -8px;
+  height: 184px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.book-desc h1 {
+  font-size: 15px;
+  color: var(--white);
+}
+.book-desc p {
+  font-size: 11px;
+  color: var(--desc-color);
+}
+.read-btn {
+  padding: 5px;
+  color: var(--white);
+  background: none;
+  border: 1px solid var(--white);
+  cursor: pointer;
+}
+.book-list-container {
+  height: fit-content;
+  padding: 2rem 1rem;
+  /* overflow-y: auto;
+height: 60vh; */
+}
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 34px;
+  margin: 1rem 0;
+  justify-content: center;
+}
+.book-list .image {
+  width: 128px;
+  height: 192px;
+}
+.book-list .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.additional-details-1 {
+  display: flex;
+  justify-content: space-between;
+}
+.additional-details-2 {
+  display: flex;
+}
+.additional-details-2 span {
+  margin-inline: 10px;
+}
+.btns {
+  display: flex;
+  justify-content: right;
+}
+.btns button {
+  align-self: flex-end;
+  padding: 5px 10px;
+  background: none;
+  color: var(--white);
+  border-color: var(--white);
+  cursor: pointer;
+  margin-inline-start: 10px;
+}
+
+.book-list-container h1{
+  font-size: 20px;
+}
