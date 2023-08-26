@@ -14,6 +14,7 @@ const BookDetails = ({ bookInfo, setBookList, selectedBook, showInfo }) => {
     else {
       getBooksData(bookInfo);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [bookInfo])
 
 
